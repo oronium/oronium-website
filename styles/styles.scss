@@ -1,0 +1,57 @@
+:root {
+  --color-primary: #000;
+  --colorsecondary: #fafafa;
+  --color-text-color: #212121;
+  --color-btn: #175fff;
+  --color-sectionhead: #175fff;
+  --color-text: #101010;
+  --color-footer: #1760ff85;
+  --color-p1: #1b89fa;
+  --color-p2: #1a73f6;
+}
+body {
+  @media only screen and (max-width: 640px) {
+    font-size: 120%;
+  }
+}
+.primary {
+  color: var(--color-primary);
+}
+.logo {
+  height: 3rem;
+}
+.navbar {
+  &:hover {
+  }
+}
+.button {
+  background: linear-gradient(
+    90deg,
+    var(--color-p1) 3.21%,
+    var(--color-p2) 99.99%
+  );
+}
+.blue-text {
+  color: var(--color-p2);
+}
+.service-card {
+  height: 13rem;
+  width: 13rem;
+  background-color: #e4efff;
+}
+.row-height {
+  height: 30rem;
+  &:hover > .img {
+    transform: scale(1.05);
+  }
+}
+.slidehover {
+  transform: translateY(5rem);
+  opacity: 0;
+}
+.light-overlay {
+  &:hover > .slidehover {
+    opacity: 1;
+    transform: translateY(-2rem);
+  }
+}
