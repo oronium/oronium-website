@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/GlobalComponents/footer";
 import About from "../components/Home/about";
 import Header from "../components/Home/header";
 import Reviews from "../components/Home/reviews";
@@ -21,6 +22,7 @@ export default function Home() {
         <About />
         <Works />
         <Reviews />
+        <Footer />
       </main>
     </div>
   );
